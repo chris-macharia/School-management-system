@@ -21,7 +21,7 @@ public class Student {
      * fees for every student is 40,000
      * initial fees for all students is 0
      */
-    public void student(int id, String name, int grade){
+    public void createStudent(int id, String name, int grade){
         
         totalFees = 40000;
         feesPaid = 0;
@@ -31,7 +31,7 @@ public class Student {
     }
     
  
-    public void setGrade(){ // setter for student grade
+    public void setGrade(int grade){ // setter for student grade
         this.grade = grade;
     }
     

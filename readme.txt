@@ -1,3 +1,5 @@
+vlc: 1:17
+
 -This project was focused on OOP.
 -We have a school with teachers and students.
 -The students have their:

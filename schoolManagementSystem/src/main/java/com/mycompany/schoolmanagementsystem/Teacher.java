@@ -2,15 +2,15 @@
 package com.mycompany.schoolmanagementsystem;
 
 
-public class Teachers {
+public class Teacher {
     
     private int id;
     private String name;
     private int salary;
     
     
-    public void teacher(int id, String name, int salary){
-       this.id = id;
+    public void createTeacher(int id, String name, int salary){ //constructor for a 
+       this.id = id;                                     // teacher
        this.name= name;
        this.salary = salary;
         
