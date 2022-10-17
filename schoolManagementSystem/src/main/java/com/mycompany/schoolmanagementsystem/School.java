@@ -5,8 +5,8 @@ import java.util.List;
 public class School {
     private List<Teacher> teachers; //you don't have to declare the size.
     private List<Student> students;
-    private int moneyEarned;
-    private int moneySpent;
+    private static int moneyEarned;
+    private static int moneySpent;
 
     public School(List<Teacher> teachers, List<Student> students) {
         this.teachers = teachers;
@@ -16,7 +16,7 @@ public class School {
     }
 
     public List<Teacher> getTeachers() {
-        return teachers;
+        return teachers;    
     }
 
     public void addTeacher(Teacher teacher) { //this code adds a teacher to the
@@ -35,7 +35,7 @@ public class School {
         return moneyEarned;
     }
 
-    public void updateMoneyEarned(int money) {
+    public static void updateMoneyEarned(int money){
         moneyEarned += money;
     }
 
@@ -47,7 +47,7 @@ public class School {
      * updates  the total money spent
      * @param money is the money that has been spent
      */
-    public void updateMoneySpent(int money) {
+    public static void updateMoneySpent(int money) {
         moneySpent -= money;
     }
     

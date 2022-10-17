@@ -37,6 +37,7 @@ public class Student {
     
     public void updateFees(int fees){
         feesPaid = feesPaid + fees;
+        School.updateMoneyEarned(feesPaid);
     }
 
     public int getId() {
